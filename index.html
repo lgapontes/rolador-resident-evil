@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.flechamagica.com.br/twd/rolador/ -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Resident Evil</title>
+		<link rel="icon" href="img/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 1em;
+      }
+      header {
+        display: block;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0 0 8px #000000;
+        margin-bottom: 40px;
+
+        background-color: #382F2F;
+        background-image: url(img/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 270px;
+      }
+      main {
+        display: block;
+        width: 600px;
+        max-width: 95%;
+        box-shadow: 0 0 15px #C0C0C0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0 auto;
+      }
+      main::after {
+        display: block;
+        height: 0;
+        content: '';
+        clear: both;
+      }
+      select {
+        width: 60%;
+        border: 1px solid #C0C0C0;
+        padding: 4px;
+        margin-bottom: 10px;
+      }
+      span {
+        display: inline-block;
+        width: 18%;
+        padding: 4px;
+        margin-bottom: 10px;
+        text-align: right;
+      }
+      input[type=number] {
+        width: 7.5%;
+        border: 1px solid #C0C0C0;
+        padding: 4px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      textarea {
+        resize: none;
+        width: 98.5%;
+        border: 1px solid #C0C0C0;
+        padding: 4px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-bottom: 0;
+      }
+      button.primary {
+        padding: 4px 8px;
+        float: right;
+        margin-left: 5px;
+        background-color: #b71c1c;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      button.second {
+        padding: 4px 8px;
+        float: right;
+        margin-left: 3px;
+				margin-top: 5px;
+        font-weight: bold;
+        background-color: #cccccc;
+      }
+      br {
+        clear: both;
+      }
+      div.botoes {
+        display: block;
+        margin-top: 5px;
+        clear: both;
+      }
+      div.botoes::after {
+        display: block;
+        height: 0;
+        content: '';
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <select id="opcao">
+				<option value="personagens" selected>Personagens</option>
+				<option value="tabela_itens">Tabela Itens</option>
+				<option value="tabela_issues">Tabela Issues</option>
+				<option value="itens">Itens</option>
+        <option value="npc">NPCs</option>
+        <option value="issues">Issues</option>
+        <option value="walkers">Zumbis</option>
+      </select>
+      <span>Quantidade</span>
+      <input type="number" id="quantidade" value="1">
+      <textarea id="resultado" rows="20"></textarea>
+
+      <div class="botoes">
+        <button class="second" type="button" id="rolar-walkers">Zumbis</button>
+        <button class="second" type="button" id="rolar-issues">Issues</button>
+        <button class="second" type="button" id="rolar-npc">NPCs</button>
+        <button class="second" type="button" id="rolar-itens">Itens</button>
+				<button class="second" type="button" id="rolar-tabela_itens">Tabela Itens</button>
+				<button class="second" type="button" id="rolar-tabela_issues">Tabela Issues</button>
+				<button class="second" type="button" id="rolar-personagens">Personagens</button>
+      </div>
+
+      <div class="botoes">
+        <button class="primary" type="button" id="rolar">Rolar</button>
+        <button class="primary" type="button" id="copiar">Copiar</button>
+        <button class="primary" type="button" id="zerar">Zerar</button>
+        <button class="primary" type="button" id="somar">+</button>
+      </div>
+    </main>
+
+
+    <script type="text/javascript" src="scripts/tabelas.js"></script>
+    <script type="text/javascript">
+      let buttonRolar = document.getElementById('rolar');
+      let buttonCopiar = document.getElementById('copiar');
+      let selectOpcao = document.getElementById('opcao');
+      let inputQuantidade = document.getElementById('quantidade');
+      let textareaResultado = document.getElementById('resultado');
+      let buttonSomar = document.getElementById('somar');
+      let buttonZerar = document.getElementById('zerar');
+
+      buttonSomar.addEventListener('click',event=>{
+        event.preventDefault();
+        inputQuantidade.value = parseInt(inputQuantidade.value) + 1;
+      });
+      buttonZerar.addEventListener('click',event=>{
+        event.preventDefault();
+        selectOpcao.selectedIndex = 0;
+        inputQuantidade.value = 1;
+        textareaResultado.value = '';
+      });
+
+      const OPTIONS = [...document.querySelectorAll('option')].map(e => e.value);
+      OPTIONS.forEach((item, i) => {
+        document.getElementById(`rolar-${item}`).addEventListener('click',event=>{
+          event.preventDefault();
+          let index = OPTIONS.indexOf(item);
+          selectOpcao.selectedIndex = index;
+          executar();
+        });
+      });
+
+      function executar() {
+        textareaResultado.value = '';
+        let elemento = selectOpcao.options[selectOpcao.selectedIndex].value;
+        let quantidade = parseInt(inputQuantidade.value);
+
+        let vetor = [...Array(quantidade).keys()];
+        let texto = '';
+
+        vetor.forEach((item, i) => {
+          rolar(elemento,valor=>{
+            texto += valor;
+
+            if (i == (vetor.length - 1)) {
+              textareaResultado.value = texto;
+            } else {
+              texto += (elemento == 'itens') ? '' : ((elemento == 'walkers') ? '\n\n' : '\n');
+            }
+          });
+        });
+      }
+
+      buttonRolar.addEventListener('click',event=>{
+        event.preventDefault();
+        executar();
+      });
+      buttonCopiar.addEventListener('click',event=>{
+        event.preventDefault();
+        textareaResultado.select();
+        textareaResultado.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(textareaResultado.value);
+      });
+
+      executar();
+    </script>
+
+
+</body></html>
