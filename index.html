@@ -75,14 +75,15 @@
         padding: 4px 8px;
         float: right;
         margin-left: 5px;
-        background-color: #b71c1c;
+				margin-top: 5px;
+				background-color: #b71c1c;
         color: #ffffff;
         font-weight: bold;
       }
       button.second {
         padding: 4px 8px;
         float: right;
-        margin-left: 3px;
+        margin-left: 5px;
 				margin-top: 5px;
         font-weight: bold;
         background-color: #cccccc;
@@ -92,7 +93,7 @@
       }
       div.botoes {
         display: block;
-        margin-top: 5px;
+        margin-top: 10px;
         clear: both;
       }
       div.botoes::after {
@@ -114,19 +115,85 @@
         <option value="npc">NPCs</option>
         <option value="issues">Issues</option>
         <option value="walkers">Zumbis</option>
+				<option value="quadros">Quadros</option>
+				<option value="estatuas">Estátuas</option>
+				<option value="taxidermia">Taxidermia</option>
+				<option value="lugares#vestibulo">Vestíbulo</option>
+				<option value="lugares#escritorio">Escritório</option>
+				<option value="lugares#quarto">Quarto</option>
+				<option value="lugares#quarto_de_crianca">Quarto de Criança</option>
+				<option value="lugares#sala">Sala</option>
+				<option value="lugares#cozinha">Cozinha</option>
+				<option value="lugares#corredor">Corredor</option>
+				<option value="lugares#sala_de_jantar">Sala de Jantar</option>
+				<option value="lugares#biblioteca">Biblioteca</option>
+				<option value="lugares#jardim">Jardim</option>
+				<option value="lugares#area_externa">Área Externa</option>
+				<option value="lugares#banheiro">Banheiro</option>
+				<option value="lugares#laboratorio">Laboratório</option>
+				<option value="lugares#sala_tecnologica">Sala Tecnológica</option>
+				<option value="lugares#estoque">Estoque</option>
+				<option value="lugares#entrada">Entrada</option>
+				<option value="lugares#sala_de_energia">Sala de Energia</option>
+				<option value="lugares#sala_de_artes">Sala de Artes</option>
+				<option value="lugares#lobby">Lobby</option>
+				<option value="lugares#sala_de_apoio">Sala de Apoio</option>
+				<option value="lugares#enfermaria">Enfermaria</option>
+				<option value="lugares#crematorio">Crematório</option>
+				<option value="lugares#sala_secreta">Sala Secreta</option>
+				<option value="lugares#hall">Hall</option>
+				<option value="lugares#restaurante">Restaurante</option>
+				<option value="lugares#bar">Bar</option>
+				<option value="lugares#bercario">Berçario</option>
       </select>
       <span>Quantidade</span>
       <input type="number" id="quantidade" value="1">
       <textarea id="resultado" rows="20"></textarea>
 
       <div class="botoes">
-        <button class="second" type="button" id="rolar-walkers">Zumbis</button>
+				<button class="second" type="button" id="rolar-taxidermia">Taxidermia</button>
+				<button class="second" type="button" id="rolar-quadros">Quadros</button>
+				<button class="second" type="button" id="rolar-estatuas">Estátuas</button>
+				<button class="second" type="button" id="rolar-itens">Itens</button>
+				<button class="second" type="button" id="rolar-tabela_itens">Tabela Itens</button>
+      </div>
+
+			<div class="botoes">
+				<button class="second" type="button" id="rolar-walkers">Zumbis</button>
         <button class="second" type="button" id="rolar-issues">Issues</button>
         <button class="second" type="button" id="rolar-npc">NPCs</button>
-        <button class="second" type="button" id="rolar-itens">Itens</button>
-				<button class="second" type="button" id="rolar-tabela_itens">Tabela Itens</button>
 				<button class="second" type="button" id="rolar-tabela_issues">Tabela Issues</button>
 				<button class="second" type="button" id="rolar-personagens">Personagens</button>
+      </div>
+
+			<div class="botoes">
+				<button class="second" type="button" id="rolar-lugares#vestibulo">Vestíbulo</button>
+				<button class="second" type="button" id="rolar-lugares#escritorio">Escritório</button>
+				<button class="second" type="button" id="rolar-lugares#quarto">Quarto</button>
+				<button class="second" type="button" id="rolar-lugares#quarto_de_crianca">Quarto de Criança</button>
+				<button class="second" type="button" id="rolar-lugares#sala">Sala</button>
+				<button class="second" type="button" id="rolar-lugares#cozinha">Cozinha</button>
+				<button class="second" type="button" id="rolar-lugares#corredor">Corredor</button>
+				<button class="second" type="button" id="rolar-lugares#sala_de_jantar">Sala de Jantar</button>
+				<button class="second" type="button" id="rolar-lugares#biblioteca">Biblioteca</button>
+				<button class="second" type="button" id="rolar-lugares#jardim">Jardim</button>
+				<button class="second" type="button" id="rolar-lugares#area_externa">Área Externa</button>
+				<button class="second" type="button" id="rolar-lugares#banheiro">Banheiro</button>
+				<button class="second" type="button" id="rolar-lugares#laboratorio">Laboratório</button>
+				<button class="second" type="button" id="rolar-lugares#sala_tecnologica">Sala Tecnológica</button>
+				<button class="second" type="button" id="rolar-lugares#estoque">Estoque</button>
+				<button class="second" type="button" id="rolar-lugares#entrada">Entrada</button>
+				<button class="second" type="button" id="rolar-lugares#sala_de_energia">Sala de Energia</button>
+				<button class="second" type="button" id="rolar-lugares#sala_de_artes">Sala de Artes</button>
+				<button class="second" type="button" id="rolar-lugares#lobby">Lobby</button>
+				<button class="second" type="button" id="rolar-lugares#sala_de_apoio">Sala de Apoio</button>
+				<button class="second" type="button" id="rolar-lugares#enfermaria">Enfermaria</button>
+				<button class="second" type="button" id="rolar-lugares#crematorio">Crematório</button>
+				<button class="second" type="button" id="rolar-lugares#sala_secreta">Sala Secreta</button>
+				<button class="second" type="button" id="rolar-lugares#hall">Hall</button>
+				<button class="second" type="button" id="rolar-lugares#restaurante">Restaurante</button>
+				<button class="second" type="button" id="rolar-lugares#bar">Bar</button>
+				<button class="second" type="button" id="rolar-lugares#bercario">Berçario</button>
       </div>
 
       <div class="botoes">
@@ -138,6 +205,7 @@
     </main>
 
 
+		<script type="text/javascript" src="scripts/lugares.js"></script>
     <script type="text/javascript" src="scripts/tabelas.js"></script>
     <script type="text/javascript">
       let buttonRolar = document.getElementById('rolar');
@@ -160,7 +228,7 @@
       });
 
       const OPTIONS = [...document.querySelectorAll('option')].map(e => e.value);
-      OPTIONS.forEach((item, i) => {
+      OPTIONS.forEach((item, i) => {				
         document.getElementById(`rolar-${item}`).addEventListener('click',event=>{
           event.preventDefault();
           let index = OPTIONS.indexOf(item);

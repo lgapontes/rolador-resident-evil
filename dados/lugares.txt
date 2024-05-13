@@ -1,0 +1,214 @@
+
+LUGARES
+
+>>>> Umbrella Headquarters
+
+>> Térreio
+
+H01S Elevador Secreto para Laboratório
+H01 Sala de Pintura
+H02A Sala da Manhã
+H02B Entrada Pública
+H02C Anti-sala e Vestíbulo
+H03 Biblioteca
+H04 Entrada do Jardim
+H05 Quarto dos Cavalheiros
+H06 Galeria de Imagens
+H07 Lavabo
+H08 Sala do Relógio e Laboratório
+H09 Banheiros
+H10 Sala de Entrada
+H11 Pórtico
+H12 Pórtico de Carruagem
+H13 Hall de Entrada
+H14 Escadaria do Príncipe
+H15 Vestíbulo
+H16 Sala de Espera
+H17 Corredor Transversal
+H18 Escada dos Cavalheiros
+H19 Câmara das Estátuas
+H20 Sala Secreta (Escadas)
+H21 Sala de Bilhar
+H22 Escritório
+H23 Sala de Escrita
+H24 Corredor do Mordomo
+H25 Sala Secreta
+H26 Sala de Jantar
+H27 Fosso
+H28 Anti-sala de Apoio
+H29 Elevador
+H30 Salão das Escadas
+H31 Despensa do Mordomo (Laboratório de Reuniões)
+H32 Banheiros
+H33 Quarto Estranho (Laboratório de Amostras)
+H34A Corredor dos Cavalheiros (Anti-sala Quarentena)
+H34B Corredor dos Cavalheiros (Corredor Esterilizado)
+H35 Sala de Armas (Laboratório dos Tubos)
+H36 Sala dos Sapatos (Laboratório Boticário)
+H37 Sala dos Ternos (Laboratório de Pesquisa)
+H38 Banheiros (Tubos de Hidrogenia)
+H39 Sala de Limpeza (Anti-sala Quarentena)
+H40 Vestíbulo (Monitores de Conferência)
+H41 Quarto Seguro (Laboratório Cofre)
+H42 Quarto do Mordomo (Amostras em Grades)
+H43 Salão dos Servos (Laboratório
+H44 Sala de Apoio
+H45 Escadas da Torre
+H46 Corredor das Governantas (Corredor Branco)
+H47 Sala de Trabalho Feminina (Escritório UBCS)
+H48 Depósito Científico
+H49 Anti-sala Recepção
+H50 Anti-sala Segurança
+H51 Escritório de Recepção
+H52 Anti-sala Quarentena
+H53 Depósito Refrigerado
+H54 Cozinha (Laboratório de Conferência)
+H55 Freezer Industrial
+H56 Entrada da Cozinha (Sala Segurança)
+H57 Hall da Cozinha (Conferência Administrativa)
+H58 Despensa (Itens não Autorizados)
+H59 Despensa (Pendência Administrativa)
+H60 Despensa (Aguardando Conferência)
+H61 Armário de Combustível
+H62 Copa (Laboratório de Descartes)
+H63 Fogão Industrial (Crematório)
+H64 Cabana (Garagem Coberta)
+H65 Pátio da Cozinha (Garagem Científica)
+H66 Entrada da Adega (Entrada do Laboratório)
+H67 Casa de Máquinas
+H68 Carvões (Matriz Elétrica)
+H69 Caldeira (Gerador Reserva)
+H70 Casa de Carvão (Depósito)
+H71 Banheiros
+H72 Sala de Inventariado
+H73 Autorização de Entrada
+
+>> Primeiro Andar
+
+H74 Salão das Escadas
+H75 Salão das Estátuas
+H76 Creche
+H77A Corredor da Creche
+H77B Corredor Restrito
+H78 Berçário
+H79 Banheiro
+H80 Copa
+H81 Closet
+H82 Enfermaria
+H83 Armário de Brinquedos
+H84 Corredor dos Quadros
+H85 Escadas da Torre
+H86 Quarto dos Cientistas
+H87 Corredor dos Quartos
+H88 Quarto dos Cientistas
+H89 Quarto dos Cientistas
+H90 Dormitório UBCS
+H91 Cientista Chefe
+H92 Banheiros
+H93 Alojamento e Armários
+H94 Sala de Banho
+H95 Dormitório Staff
+H96 Dormitório Segurança
+H97 Recepção Dormitórios
+H98 Sala de Espera
+H99 Rouparia (Uniformes)
+H100 Elevador
+H101 Closet
+H102 Quarto de Banho, Closet e Banheiro
+H103 Escola e Cursos
+H104 Corredor dos Quartos
+H105 Quarto de Família (Tipo B)
+H106 Quarto de Família (Tipo A)
+H107 Passagem
+H108 Quarto de Banho, Closet e Banheiro
+H109 Anti-sala e Escadas
+H110 Sala de Estar
+H111 Quarto de Família (Tipo A)
+H112 Quarto de Família Master
+H113 Quarto de Família Master
+H114 Quarto de Família Master
+H114S Elevador Secreto para Laboratório
+H115 Quarto de Família (Tipo C)
+H116 Quarto de Família (Tipo C)
+H117 Sala de Banho
+H118 Sala de Vestimentas
+H119 Quarto de Família (Tipo C)
+H120 Escadaria do Príncipe
+H121N Corredor Norte
+H121S Corredor Sul
+H121L Corredor Leste
+H121O Corredor Oeste
+H122 Lobby e Banheiro
+H123 Escada dos Cavalheiros
+H124 Banheiro Privado
+H125 Bar
+H126 Lobby
+H127 Banheiro Privado
+H128 Lobby e Banheiro Privado
+H129 Banheiro
+H130 Quarto Secreto
+
+>> Segundo Andar
+
+H131 Escritório Segurança
+H132 Contabilidade
+H133 Manutenção Elétrica
+H134 Administração
+H135 Sala de Atendimento
+H136 Corredor Recepção
+H137 Banheiros
+H138 Sala de Reuniões
+H139 Salão das Escadas
+H140 Corredor dos Escritórios
+H141 Controladoria
+H142 Liderança UBCS
+H143 Sala de Conexões
+H144 Banheiro e Sala de Banho
+H145 Sala dos Quadros
+H146 Sala Secreta
+H147 Administração Eletrônica
+H148 Elevador
+H149 Segurança do Prédio
+H150 Pesquisas Científicas
+H151 Órgãos Governamentais
+H152 Anti-sala
+H153 Escadas
+H154 Elevador Secreto para Laboratório
+H155 Liderança Umbrella
+H156 Recepção Liderança
+H157 Administração Militar
+H158 Artes e Taxidermia
+H159 Sala das Estátuas
+H160 Sala de Conferências
+H161 Políticos de Raccoon City
+H162 Escadaria do Príncipe
+H163 Escada dos Cavalheiros
+H164 Lobby e Banheiros
+H165 Cofre
+H166 Banheiro Privativo
+H167 Lobby e Banheiros
+H168 Cientista Chefe
+H169 Contador Chefe
+H170 Cofre de Armas
+H171 Sala Secreta
+H172 Varanda
+H173 Corredores dos Escritórios
+
+
+
+
+>>>> Salão de Arte Raccoon City
+
+S01 Recepção
+S02 Entrada Pública
+S03 Salão dos Quadros
+S04 Bar
+S05 Livraria
+S06 Hall com Estátua
+S07 Restaurante
+S08 Administração
+S09 Entrada de Serviço
+S10 Armazém
+S11 Despensa
+S12 Open bar
+S13 Banheiro
